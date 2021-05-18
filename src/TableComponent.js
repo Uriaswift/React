@@ -19,10 +19,30 @@ export default class TableComponent extends Component {
     }
 
     render() {
-            return (
-                <ul>
-                    { this.state.items.map(items => <li>{items.strDrink}</li>)}
-                </ul>
-            )
-        }
+        return (
+            this.state.items.map(items =>
+                <div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Drink</th>
+                            <th>Photo</th>
+                            <th>Number</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {
+                            items.map((items) =>
+                                <tr key={items.id}>
+                                    <td>{items.strDrink}</td>
+                                    <td>{items.strDrinkThumb}</td>
+                                    <td>{items.idDrink}</td>
+                                </tr>
+                            )
+                        }
+                        </tbody>
+                    </table>
+                </div>)
+        )
+    }
 }

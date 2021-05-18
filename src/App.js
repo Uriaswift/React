@@ -5,6 +5,8 @@ import Ccomponent from "./Ccomponent";
 //import Afcomponent from "./Afcomponent";
 import Formcomponent from "./Formcomponent";
 import TableComponent from "./TableComponent";
+import SelectComponent from "./SelectComponent";
+import SelectServerComponent from "./SelectServerComponent";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Ccomponent/>
           <Formcomponent/>
           <TableComponent/>
+          <SelectComponent/>
+          <SelectServerComponent/>
           {/*<Afcomponent/>*/}
         <img src={logo} className="App-logo" alt="logo" />
         <p>

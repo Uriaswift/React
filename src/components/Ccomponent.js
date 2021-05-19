@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import './Ccomponent.css';
+import '../css/Ccomponent.css';
 export default class Ccomponent extends Component {
     constructor(props) {
         super(props)

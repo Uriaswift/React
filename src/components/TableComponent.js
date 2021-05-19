@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import axios from "axios";
-import './TableComponent.css';
+import '../css/TableComponent.css';
 
 export default class TableComponent extends Component {
     constructor(props) {

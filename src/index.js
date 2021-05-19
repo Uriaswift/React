@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import './Navigation.css';
+import './css/index.css';
+import './css/Navigation.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Ccomponent from "./Ccomponent";
-import TableComponent from "./TableComponent";
-import SelectServerComponent from "./SelectServerComponent";
+import Ccomponent from "./components/Ccomponent";
+import TableComponent from "./components/TableComponent";
+import SelectServerComponent from "./components/SelectServerComponent";
 import {NavLink, BrowserRouter as Router, Route} from 'react-router-dom';
 /*ReactDOM.render(
   <React.StrictMode>

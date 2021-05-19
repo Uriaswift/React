@@ -33,9 +33,9 @@ export default class TableComponent extends Component {
                     </thead>
                     <tbody>
                     {items.map((row, index) =>
-                        <tr>
+                        <tr key={index}>
                             {/*<td>{index}</td>*/}
-                            <td>{row.strDrink}</td>
+                            <td >{row.strDrink}</td>
                             <td><img alt='' width="80" src={row.strDrinkThumb}/></td>
                             <td>{row.idDrink}</td>
 

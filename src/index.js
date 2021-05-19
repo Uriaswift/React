@@ -8,12 +8,7 @@ import Ccomponent from "./components/Ccomponent";
 import TableComponent from "./components/TableComponent";
 import SelectServerComponent from "./components/SelectServerComponent";
 import {NavLink, BrowserRouter as Router, Route} from 'react-router-dom';
-/*ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);*/
+
 ReactDOM.render(
     <section className="container">
         <Router classname = "Router">
@@ -33,7 +28,4 @@ ReactDOM.render(
     </section>,
     document.getElementById('root')
 );
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

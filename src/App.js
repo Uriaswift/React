@@ -1,7 +1,7 @@
 import logo from './logo.png';
 import './css/App.css';
 import './css/TableComponent.css';
-import './components/SelectServerComponent.css';
+import './css/SelectServerComponent.css';
 
 function App() {
   return (

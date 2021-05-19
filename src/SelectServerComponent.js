@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import axios from "axios";
+import './SelectServerComponent.css';
 
 export default class SelectServerComponent extends Component {
     constructor(props) {
@@ -10,24 +11,25 @@ export default class SelectServerComponent extends Component {
     }
 
     componentDidMount() {
-        axios.get('localhost:8081/node/api/reactData')
-            .then(res => {
-                console.log(res);
-                const items = res.items
+        axios.get('/node/api/reactData')
+            .then((respond) => {
+                const items = respond.data.items
+                /*console.log(items);*/
                 this.setState({items});
             })
     }
 
     render() {
+        const {items} = this.state;
         return (
-            this.state.items.map(items =>
-                <div>
-                    <select>
-                        <option>{items.strDrink}</option>
-                        <option>{items.strDrinkThumb}}</option>
-                        <option>{items.idDrink}</option>
-                    </select>
-                </div>)
+            <div className="SelectServerComponent">
+                <select className="Select">
+                    {items.map((option, index) =>
+                        <option>{option.strDrink}</option>
+                    )}
+                </select>
+            </div>
         )
     }
 }
+

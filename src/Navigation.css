@@ -1,0 +1,19 @@
+.nav {
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+}
+.ulNav li{
+    display: inline;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.ulNav {
+    text-decoration: none;
+}
+li {
+    text-decoration: none;
+}

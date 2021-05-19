@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-
+import './Ccomponent.css';
 export default class Ccomponent extends Component {
     constructor(props) {
         super(props)
@@ -28,11 +28,13 @@ export default class Ccomponent extends Component {
     }
     render(){
         return(
-            <div>
-               <button onClick={this.increment}>Increment</button>
+            <div className="Ccomponent">
+               <div className="Buttons">
+                   <button onClick={this.increment}>Increment</button>
                 <button onClick={this.decrement}>Decrement</button>
                 <button onClick={this.reset}>Reset</button>
-                <h1>Current: {this.state.count}</h1>
+               </div>
+                <div className="CountHeader"><h1>Current: {this.state.count}</h1></div>
             </div>
         )
     }

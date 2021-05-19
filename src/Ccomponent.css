@@ -1,0 +1,14 @@
+.Ccomponent {
+    background-color: #282c34;
+    min-height: 88.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.CountHeader {
+    position: relative; bottom: 150px; right: 80px;
+}
+.Buttons {
+    position: relative; bottom: 20px; left: 80px;
+}
